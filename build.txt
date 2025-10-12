@@ -1,0 +1,4 @@
+displayName = Accurate Whipping
+author = Qther
+version = 1.0.0
+side = Both

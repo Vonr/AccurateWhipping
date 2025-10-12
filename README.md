@@ -1,0 +1,5 @@
+# Accurate Whipping
+
+Makes whips collisions less discrete by replacing its rectangle-based collision checks with triangle-based ones.
+This allows whips to hit small enemies much more consistently than in the vanilla game.
+However, the timing of the hitboxes are not as synchronized to the visual movements, especially near the center line of the whip.
