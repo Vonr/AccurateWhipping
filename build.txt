@@ -1,4 +1,5 @@
 displayName = Accurate Whipping
 author = Qther
-version = 1.0.0
+version = 1.0.1
 side = Both
+includeSource = true
