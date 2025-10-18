@@ -82,8 +82,10 @@ namespace AccurateWhipping
                         return Utils.RectangleLineCollision(targetRect.TopLeft(), targetRect.BottomRight(), a, b);
                     }
 
-                    foreach (var point in self.WhipPointsForCollision.Select(shift))
+                    for (var i = self.WhipPointsForCollision.Count - 1; i >= 0; i--)
                     {
+                        var point = shift(self.WhipPointsForCollision[i]);
+
                         if (IsInsideTriangle(origin, point, mid, targetRect.Center()) || c(origin, point) || c(point, mid) || c(mid, origin))
                         {
                             self.WhipPointsForCollision.Clear();
